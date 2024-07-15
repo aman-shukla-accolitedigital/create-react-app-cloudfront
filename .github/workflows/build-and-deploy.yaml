@@ -11,7 +11,7 @@ jobs:
       BUCKET: create-react-app-aman
       DIST: build
       REGION: us-east-1
-      DIST_ID: <ID>
+      DIST_ID: E1WFIY1YW42PQY
 
     steps:
     - name: Checkout
@@ -29,9 +29,8 @@ jobs:
     #     node-version: '14'
 
     - name: Install Dependencies
-      run: |
-        node --version
-        npm ci --production
+      run: npm ci --production
+        
 
     - name: Build Static Website
       run: npm run build
